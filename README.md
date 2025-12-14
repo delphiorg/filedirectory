@@ -1,5 +1,3 @@
-# Delphi.org File Directory
-
 These are old file downloads I was hosting on [Delphi.org](https://delphi.org/). 
   I believe a few of these were intended to be temporary, so I will be pruning them over time, 
   and adding new ones from time to time. You can also view the [directory on GitHub](https://github.com/delphiorg/filedirectory).
