@@ -1,0 +1,33 @@
+# Identity
+title: 'File Directory'
+description: 'Archive of files and downloads.'
+
+# URL Structure (CRITICAL)
+# This ensures that when the main site theme tries to load CSS 
+# from {{ site.baseurl }}/assets/, it looks in /filedirectory/assets/
+url: 'https://delphi.org'
+baseurl: '/filedirectory'
+
+# Theme
+# We keep this so Jekyll has a fallback, but the Action will overwrite 
+# the layouts with the ones from your main site.
+theme: jekyll-theme-hacker
+
+# Plugins
+# Minimal set needed for the page to render correctly
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build Settings
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Excludes
+# Keep your build clean
+exclude:
+  - scripts/
+  - _meta/files.yml
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
