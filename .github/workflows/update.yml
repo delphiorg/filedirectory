@@ -9,14 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Needed to commit changes back
+      contents: write      # Allows the Action to commit the Readme/Manifest updates
+      pages: write         # Allows the Action to deploy to GitHub Pages
+      id-token: write      # (CRITICAL) Allows the Action to verify OIDC for deployment
 
     steps:
       - name: Checkout this repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
