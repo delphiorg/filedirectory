@@ -1,0 +1,75 @@
+name: Sync Files and Theme
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit changes back
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Run Sync Script
+        run: python _meta/sync_files.py
+
+      - name: Commit manifest and readme updates
+        # Only commit if script changed files
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'jim@mckeeth.org'
+          git add _meta/files.yml README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update file list" && git push)
+
+      # --- THEME IMPORT SECTION ---
+      - name: Checkout Main Site Theme Assets
+        uses: actions/checkout@v4
+        with:
+          repository: delphiorg/delphiorg.github.io
+          path: main_site_temp
+          sparse-checkout: |
+            _layouts
+            _sass
+            assets
+            css
+
+      - name: Move Theme Files
+        run: |
+          cp -r main_site_temp/_layouts .
+          cp -r main_site_temp/_sass . || true
+          cp -r main_site_temp/assets . || true
+          cp -r main_site_temp/css . || true
+          rm -rf main_site_temp
+
+      - name: Build and Deploy to GitHub Pages
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
