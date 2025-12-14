@@ -58,6 +58,11 @@ jobs:
           cp -r main_site_temp/css . || true
           rm -rf main_site_temp
 
+      - name: Patch Navigation Links
+        # This removes "| relative_url" from all layout files so links go to the root domain
+        run: |
+          grep -rl "| relative_url" _layouts | xargs sed -i 's/| relative_url//g'    
+
       - name: Build and Deploy to GitHub Pages
         uses: actions/jekyll-build-pages@v1
         with:
