@@ -14,7 +14,9 @@ jobs:
     steps:
       - name: Checkout this repo
         uses: actions/checkout@v4
-
+        with:
+          fetch-depth: 0
+          
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -61,7 +63,7 @@ jobs:
           destination: ./_site
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     environment:
@@ -72,4 +74,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
