@@ -138,8 +138,8 @@ def main():
 
     # 5. Generate Markdown
     md_lines = [
-        HEADER, 
-        "",
+        # HEADER, 
+        # "",
         SUBHEADER,
         "", 
         "| File | Size | Updated | Description |", 
