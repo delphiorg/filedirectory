@@ -1,7 +1,3 @@
-- filename: Akadamia.DRO
-  size: 71.60 KB
-  description: ''
-  active: true
 - filename: AndroidScreenView.7z
   size: 1.18 MB
   description: ''
@@ -32,10 +28,6 @@
   description: ''
   active: true
   updated: '2025-12-15'
-- filename: Codralis3.DRO
-  size: 118.61 KB
-  description: ''
-  active: true
 - filename: CppMongoGrid.zip
   size: 1.52 MB
   description: ''
@@ -113,10 +105,6 @@
   size: 260.05 KB
   description: ''
   active: true
-- filename: JIM.DRO
-  size: 103.79 KB
-  description: ''
-  active: true
 - filename: Jim McKeeth - Wearable Thought Input.pdf
   size: 22.65 MB
   description: ''
@@ -155,10 +143,6 @@
   active: true
 - filename: JimMcKeethAboutRandom.zip
   size: 29.04 KB
-  description: ''
-  active: true
-- filename: Kisai.DRO
-  size: 70.38 KB
   description: ''
   active: true
 - filename: MobileRestXE5.7z
@@ -217,18 +201,6 @@
   active: true
 - filename: bits-tbl,c,header,pas(3.0).zip
   size: 122.82 KB
-  description: ''
-  active: true
-- filename: bot-DRGN.DRO
-  size: 48.88 KB
-  description: ''
-  active: true
-- filename: bot_FG6.DRO
-  size: 48.67 KB
-  description: ''
-  active: true
-- filename: codingindelphi.pdf
-  size: 1.11 MB
   description: ''
   active: true
 - filename: d-robots1.2.zip
