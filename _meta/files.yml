@@ -22,14 +22,16 @@
   size: 3.46 MB
   description: ''
   active: true
+- filename: CodeRageX-MongoDB-2.pdf
+  size: 459.72 KB
+  description: ''
+  active: true
+  updated: '2025-12-15'
 - filename: CodeRageX-MongoDB-2.pptx
   size: 2.49 MB
   description: ''
   active: true
-- filename: CodeRageXI.potx
-  size: 9.12 MB
-  description: ''
-  active: true
+  updated: '2025-12-15'
 - filename: Codralis3.DRO
   size: 118.61 KB
   description: ''
@@ -167,10 +169,16 @@
   size: 21.39 KB
   description: ''
   active: true
+- filename: MongoDB_FireDAC_Presentation.pdf
+  size: 694.13 KB
+  description: ''
+  active: true
+  updated: '2025-12-15'
 - filename: MongoDB_FireDAC_Presentation.pptx
   size: 9.11 MB
   description: ''
   active: true
+  updated: '2025-12-15'
 - filename: RemoteServiceDemo.zip
   size: 52.67 KB
   description: ''
