@@ -11,8 +11,8 @@ These are old file downloads I was hosting on [Delphi.org](https://delphi.org/).
 | [BitsDemo.zip](BitsDemo.zip) | 1.45 KB |  |  |
 | [CodeMonkeyCode.zip](CodeMonkeyCode.zip) | 16.01 KB |  |  |
 | [CodeRage 8 - Beyond the App.pdf](CodeRage 8 - Beyond the App.pdf) | 3.46 MB |  |  |
-| [CodeRageX-MongoDB-2.pptx](CodeRageX-MongoDB-2.pptx) | 2.49 MB |  |  |
-| [CodeRageXI.potx](CodeRageXI.potx) | 9.12 MB |  |  |
+| [CodeRageX-MongoDB-2.pdf](CodeRageX-MongoDB-2.pdf) | 459.72 KB | 2025-12-15 |  |
+| [CodeRageX-MongoDB-2.pptx](CodeRageX-MongoDB-2.pptx) | 2.49 MB | 2025-12-15 |  |
 | [Codralis3.DRO](Codralis3.DRO) | 118.61 KB |  |  |
 | [CppMongoGrid.zip](CppMongoGrid.zip) | 1.52 MB |  |  |
 | [CppParallelExamples.zip](CppParallelExamples.zip) | 2.05 MB |  |  |
@@ -47,7 +47,8 @@ These are old file downloads I was hosting on [Delphi.org](https://delphi.org/).
 | [Kisai.DRO](Kisai.DRO) | 70.38 KB |  |  |
 | [MobileRestXE5.7z](MobileRestXE5.7z) | 8.10 KB |  |  |
 | [MongoDB.zip](MongoDB.zip) | 21.39 KB |  |  |
-| [MongoDB_FireDAC_Presentation.pptx](MongoDB_FireDAC_Presentation.pptx) | 9.11 MB |  |  |
+| [MongoDB_FireDAC_Presentation.pdf](MongoDB_FireDAC_Presentation.pdf) | 694.13 KB | 2025-12-15 |  |
+| [MongoDB_FireDAC_Presentation.pptx](MongoDB_FireDAC_Presentation.pptx) | 9.11 MB | 2025-12-15 |  |
 | [RemoteServiceDemo.zip](RemoteServiceDemo.zip) | 52.67 KB |  |  |
 | [RevengeDelphiRobotRage2008.zip](RevengeDelphiRobotRage2008.zip) | 586.04 KB |  |  |
 | [RevengeDelphiRobotRage2010.zip](RevengeDelphiRobotRage2010.zip) | 291.45 KB |  |  |
